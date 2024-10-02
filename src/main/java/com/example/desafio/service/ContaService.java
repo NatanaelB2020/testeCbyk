@@ -116,7 +116,7 @@ public class ContaService {
     }
 
 
-    private void validarConta(Conta conta) {
+    public void validarConta(Conta conta) {
         if (conta.getValor() == null || conta.getValor().compareTo(BigDecimal.ZERO) < 0) {
             throw new IllegalArgumentException("O valor da conta deve ser positivo.");
         }
